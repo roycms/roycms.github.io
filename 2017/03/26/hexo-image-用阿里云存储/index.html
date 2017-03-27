@@ -212,6 +212,11 @@
 <p>在400行处添加代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">var objectKey = &quot;hexoResource/&quot; + Date.now() + filename</div><div class="line"></div><div class="line">  co(function* () &#123;</div><div class="line">    client.useBucket(&apos;server-19860911&apos;);</div><div class="line">    var result = yield client.put(objectKey, buf);</div><div class="line">    // console.log(&quot;|||||||||||||=======&quot;+result);</div><div class="line">    var returnFileName = &quot;https://server-19860911.oss-cn-beijing.aliyuncs.com/&quot; + objectKey</div><div class="line">    hexo.source.process().then(function () &#123;</div><div class="line">      res.done(&#123;</div><div class="line">        src: returnFileName,</div><div class="line">        msg: msg</div><div class="line">      &#125;)</div><div class="line">    &#125;);</div><div class="line"></div><div class="line">  &#125;).catch(function (err) &#123;</div><div class="line">    console.log(&quot;|||||||||||||&quot;+err);</div><div class="line">  &#125;);</div></pre></td></tr></table></figure></p>
 
 
+                <!-- size of one module in pixels, default 6 -->
+                <div class="text-center">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAAE+CAAAAAAxUyPsAAADpUlEQVR42u3bQY7jMAwEwPz/07vXARZjNEnFZrLFU5AosFW60C359UcN6oUAHz58+BQ+fPjwKXz48OFT+PDhw6fw4cOHD5/Chw8fPoUPHz58Ch8+fPgUPnz48OFT+PDhw6fw4cOHTx3le8X1c/xvn5PxP7/5d8z1vfXuGR8+fPjw4dvGl4/JpzHn/g29es/48OHDhw/fTr4qQXWS101MfsXeMuDDhw8fPnyfyJfEDTlH/sA/b4Dw4cOHDx++72hc8gf4Hs3ZJceHDx8+fPj28FXHXHNUA4J88h+814EPHz58+PAdPaB25+cvPN+HDx8+fPj+A75JVRuUPAjI44PDM8KHDx8+fPhujwyqDUHy0lQS2ef3Uw3u8eHDhw8fvj18CVxC30OptkG9BggfPnz48OHbw5dE8/khsOqt59fKY4sJIj58+PDhw3dP4zIJApKYPmmAekfSq+0OPnz48OHDt4Gv19BUH+AnL1Cd2ozHhw8fPnz4dvJVJ1997araguQN02i++PDhw4cP3418vZg+b1km/70HER8+fPjw4Xs3X29jOz84Xo3yq7h5iIAPHz58+PBt4Kui5KFAvo2dhwXJS1n48OHDhw/fZr7eUeyEftKg9LbhHwjr8eHDhw8fvnFAP59e9QBZNWqvbg/gw4cPHz58e/h6j+hnj2Xny9NrjPDhw4cPH749fAnEZCM8aUpObYc/fEANHz58+PDha/ElLUv19aqcuBr99xYMHz58+PDhe4pv3oLk7U5v5D1hAT58+PDhw3f/M2/+ffUYd7IpPmlTVkQG+PDhw4cPX6tZmbQICWveMOXLli8/Pnz48OHD9yxfNezOoasBxOS/K/o+fPjw4cOHr9WyJL9W25fJ8iRNSbVJwocPHz58+J7lyyffi9FPPdJPth/w4cOHDx++zXzJcbFkASbLNj84jg8fPnz48G3jOxXuVxcmH3PNcTayx4cPHz58+O4P63uvSCUEyQZA75DcqQACHz58+PDhuz8ySJqVapNRPRp+tj3Chw8fPnz4dvJNXsrqTTi51iSyx4cPHz58+L6JL/+1GjFUm5hTkT0+fPjw4cO3jS8P1nsE1UZk0fk+fPjw4cOH7w1hff4wnzQl1/dQve4H7HXgw4cPHz58b4vC82nkfHlAgA8fPnz48O3kU/jw4cOHT+HDhw+fwocPHz6FDx8+fAofPnz4FD58+PDhU/jw4cOn8OHDh0/hw4cPn8KHDx8+fAofPnz4VFx/ATt2fLay+6ooAAAAAElFTkSuQmCC">
+                </div>
+
                 
             </div>
 
@@ -232,6 +237,7 @@
         </div>
     </div>
 </article>
+
 
 
     <!-- Footer -->
