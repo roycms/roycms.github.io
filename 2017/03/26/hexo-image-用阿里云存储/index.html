@@ -205,6 +205,10 @@
 
             <!-- Post Main Content -->
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              <small class="copyright text-muted navbar-right">
+                 203字预计1分
+              </small>
+
                 <h4 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h4><p>安装 hexo-admin,co,ali-oss<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">cd 项目目录</div><div class="line">npm install hexo-admin </div><div class="line">npm install co</div><div class="line">npm install ali-oss</div></pre></td></tr></table></figure></p>
 <h4 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h4><p>open /node_modules/hexo-admin/api.js 在头部加入代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var co = require(&apos;co&apos;)</div><div class="line">var oss = require(&apos;ali-oss&apos;)</div></pre></td></tr></table></figure></p>
 <p>在 module.exports 内初始化阿里云<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">module.exports = function (app, hexo) &#123;</div><div class="line"></div><div class="line">  //初始化阿里云</div><div class="line">  var client = new oss(&#123;</div><div class="line">    region: &apos;你的region&apos;,</div><div class="line">    accessKeyId: &apos;你的accessKeyId&apos;,</div><div class="line">    accessKeySecret: &apos;你的accessKeySecret&apos;</div><div class="line">  &#125;);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
