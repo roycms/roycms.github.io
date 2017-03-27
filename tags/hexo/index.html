@@ -10,11 +10,6 @@
 
     <!--Description-->
     
-        <meta name="description" content="在公司受邀给前端讲gulp，对于我这IOS开发来说，已经许久没有用前端的东西了，在讲之前还是做一个简单的课件准备一下，顺便拿出来分享，供大家翻阅。
-
-什么是构建系统？构建系统(build system)是用来从源代码生成用户可以使用的目标(targets)的自动化工具。自动化工具。
-前端有哪些构建需">
-    
 
     <!--Author-->
     
@@ -23,7 +18,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="gulp前端构建工具讲义"/>
+        <meta property="og:title" content="Roy&#39;s Blog"/>
     
 
     <!--Open Graph Description-->
@@ -34,7 +29,7 @@
 
     <!--Type page-->
     
-        <meta property="og:type" content="article" />
+        <meta property="og:type" content="website" />
     
 
     <!--Page Cover-->
@@ -45,7 +40,7 @@
 
     <!-- Title -->
     
-    <title>gulp前端构建工具讲义 - Roy&#39;s Blog</title>
+    <title>hexo - Roy&#39;s Blog</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
@@ -157,144 +152,50 @@
 </nav>
 
     <!-- Main Content -->
-    <!-- Page Header -->
-<!-- Set your background image for this header in your post front-matter: cover -->
+    
 
+<!-- Page Header -->
+<!-- Set your background image for this header in the theme's configuration: index_cover -->
 <header class="intro-header" style="background-image: url('https://server-19860911.oss-cn-beijing.aliyuncs.com/hexoResource/1490575299745/images/pasted-0.png')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-heading">
-                    <h1>gulp前端构建工具讲义</h1>
-                    
-                    <span class="meta">
-                        <!-- Date and Author -->
-                        
-                            Posted by Roy on
-                        
-                        2017-03-26
-                    </span>
+                <div class="site-heading">
+                    <h1>#hexo</h1>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
-<!-- Post Content -->
-<article>
-    <div class="container">
-        <div class="row">
-
-            <!-- Tags and categories -->
-           
-                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
-                    
-                        
-
-
-<a href="/tags/gulp/">#gulp</a>
-
-
-                    
-                </div>
-                <div class="col-lg-4 col-md-5 post-categories">
-                    
-                        
-
-<a href="/categories/技术/">技术</a>
-
-                    
-                </div>
+<!-- Main Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             
-
-            <!-- Gallery -->
+                <div class="post-preview">
+    <a href="/2017/03/26/hexo-image-用阿里云存储/">
+        <h1 class="post-title archive">
+            hexo image 用阿里云存储
+        </h1>
+    </a>
+    <p class="post-meta archive">
+        <!-- Date and Author -->
+        
+            Posted by Roy on
+        
+        2017-03-26
+    </p>
+</div>
             
-
-            <!-- Post Main Content -->
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-              <small class="copyright text-muted navbar-right">
-                 422字预计2分
-              </small>
-
-                <p><img src="https://server-19860911.oss-cn-beijing.aliyuncs.com/hexoResource/1490536620665/images/pasted-0.png" alt="upload successful"></p>
-<blockquote>
-<p>在公司受邀给前端讲gulp，对于我这IOS开发来说，已经许久没有用前端的东西了，在讲之前还是做一个简单的课件准备一下，顺便拿出来分享，供大家翻阅。</p>
-</blockquote>
-<h2 id="什么是构建系统？"><a href="#什么是构建系统？" class="headerlink" title="什么是构建系统？"></a>什么是构建系统？</h2><p>构建系统(build system)是用来从源代码生成用户可以使用的目标(targets)的自动化工具。<br>自动化工具。</p>
-<h2 id="前端有哪些构建需求？"><a href="#前端有哪些构建需求？" class="headerlink" title="前端有哪些构建需求？"></a>前端有哪些构建需求？</h2><ul>
-<li><p>预处理</p>
-<pre><code>SASS LESS CoffeeScript Babel 等预处理 ECMA Script6 的兼容标准
-</code></pre></li>
-<li><p>风格与测试</p>
-<pre><code>代码风格检测，单元测试
-</code></pre></li>
-<li><p>资源压缩</p>
-<pre><code>CSS JS 文件合并压缩  -webkit- -moz- 前缀兼容性处理
-</code></pre></li>
-<li><p>静态资源的替换</p>
-<pre><code>开发—&gt;生产环境 需要更换URL地址以及CDN地址切换等自动化任务
-</code></pre></li>
+            <div class="archive-before-pagination"></div>
+            <ul class="pager">
+    
+    
 </ul>
-<h2 id="前端那些构建工具？"><a href="#前端那些构建工具？" class="headerlink" title="前端那些构建工具？"></a>前端那些构建工具？</h2><ul>
-<li>任务管理工具 Gulp, Grunt</li>
-<li>打包工具 webpack, FIS</li>
-<li>构建工具  Make</li>
-</ul>
-<h2 id="Gulp和Grunt-区别是什么？"><a href="#Gulp和Grunt-区别是什么？" class="headerlink" title="Gulp和Grunt 区别是什么？"></a>Gulp和Grunt 区别是什么？</h2><p>Gulp 对文件的处理采用流式读取。</p>
-<h2 id="Gulp-常用插件讲解"><a href="#Gulp-常用插件讲解" class="headerlink" title="Gulp 常用插件讲解"></a>Gulp 常用插件讲解</h2><ul>
-<li>gulp-uglify （JS压缩）</li>
-<li>gulp-minify-css（CSS压缩） </li>
-<li>gulp-minify-html（html压缩） </li>
-<li>gulp-jshint（JS代码检查） </li>
-<li>gulp-concat（文件合并） </li>
-<li>gulp-less（编译Less） </li>
-<li>gulp-sass（编译Sass） </li>
-<li>gulp-imagemin（压缩图片） </li>
-<li>gulp-livereload（自动刷新） </li>
-</ul>
-<h2 id="Gulp-文档资源地址及拓展阅读"><a href="#Gulp-文档资源地址及拓展阅读" class="headerlink" title="Gulp 文档资源地址及拓展阅读"></a>Gulp 文档资源地址及拓展阅读</h2><ul>
-<li>gulp 安装 <a href="install.md">link</a></li>
-<li>gulp 官方网站 <a href="http://gulpjs.com/" target="_blank" rel="external">link</a></li>
-<li>gulp 插件资源地址 <a href="http://gulpjs.com/plugins/" target="_blank" rel="external">link</a></li>
-<li>gulp 中文站点  <a href="http://www.gulpjs.com.cn/" target="_blank" rel="external">link</a>   </li>
-<li><a href="http://www.w3ctech.com/topic/134" target="_blank" rel="external">http://www.w3ctech.com/topic/134</a>   </li>
-<li><a href="http://stackoverflow.com/questions/26719884/gulp-minify-multiple-js-files-to-one" target="_blank" rel="external">http://stackoverflow.com/questions/26719884/gulp-minify-multiple-js-files-to-one</a>   </li>
-<li><a href="https://www.npmjs.com/package/gulp-minify-html" target="_blank" rel="external">https://www.npmjs.com/package/gulp-minify-html</a>   </li>
-<li><a href="https://www.npmjs.com/package/gulp-minify-css" target="_blank" rel="external">https://www.npmjs.com/package/gulp-minify-css</a>     </li>
-<li><a href="http://ju.outofmemory.cn/entry/140033" target="_blank" rel="external">http://ju.outofmemory.cn/entry/140033</a>   </li>
-<li><a href="http://www.techug.com/gulp" target="_blank" rel="external">http://www.techug.com/gulp</a>   </li>
-<li><a href="http://www.gulpjs.com.cn/docs/writing-a-plugin/中文官网" target="_blank" rel="external">http://www.gulpjs.com.cn/docs/writing-a-plugin/中文官网</a> </li>
-<li><a href="https://www.npmjs.com/package/gulp-inject-string" target="_blank" rel="external">https://www.npmjs.com/package/gulp-inject-string</a>   </li>
-<li><a href="https://github.com/stevelacy/gulp-git" target="_blank" rel="external">https://github.com/stevelacy/gulp-git</a>   </li>
-<li><a href="http://www.cnblogs.com/2050/p/4198792.html" target="_blank" rel="external">http://www.cnblogs.com/2050/p/4198792.html</a>        </li>
-</ul>
-
-
-                <!-- size of one module in pixels, default 6 -->
-                <div class="text-center">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASYAAAEmCAAAAADqr2IGAAADEUlEQVR42u3bS5KkMAwFQO5/6ZkTQDxJNOByatXRRQHOWuiDOf6JIA4EmDBhwoQJk8CECRMmTJgwCUyYMGHChAmTwIQJEyZMmDAJTJgwYcKECZPAhAkTJkyYMAlMmDBhwrQZ0xHH2XfPzpZc5ezT+b1hwoQJEyZMZ0vNOarc1av37g0TJkyYMGE6u8x1Ys5T/oQvue7ZMZgwYcKECdO9TNWlXoPO7w0TJkyYMGG6i2nSHvcabEyYMGHChOmZIW/SBielQ1IWLDwLx4QJEyZMH2PKR7HP/73k/iZMmDBhwvQZpgnrdWrP03lvqaNVYMKECROmbZjyBJwsrzoanhQrmDBhwoQJ011k1eSdjH2vOZJ7eK31xYQJEyZMCzLljx7zFnc+IE5KjUcLAkyYMGHCtCBTvuX07P+9La29Iz+3RRUTJkyYMH2eKVlw7xZ7pUO1bX5tyIsJEyZMmJZimmy+SVro3kuJyTj4tSEvJkyYMGH6IaZJEVAd6eYQk+IAEyZMmDDtxpS3l5M0XyW4d8MrJkyYMGHakylPyfMXCydA95YFmDBhwoRpH6a8FEjKgt4DyyOITw95MWHChAnT55kmI9o5TV5GfGhCgAkTJkyYlmLKk3EyzM1Bkx8gLxcwYcKECROmOVlvI2leiCTtbq9dx4QJEyZMezJVB6z5YvKC4N4XNjBhwoQJE6ZJMq6m6nzbaz78nY96MWHChAkTpvz4XqquFhzJtzBhwoQJE6acqfdos3e23vGjQTYmTJgwYdqGaTIU7rWjvSZ5ckVMmDBhwrQzU28b6Pzx5F1lx6N1EyZMmDBhWpapmsKrhcJ8xPzyyxiYMGHChOknmKqbU/MHn0kZ8eSoFxMmTJgwYao+pMyHttVG90cKAkyYMGHCtCBTj6Z6nnvHu5gwYcKEaWemahPb+xmSke6k5caECRMmTJjyljJJ28kA9y9a4gkWJkyYMGHah2nPwIQJEyZMmDAJTJgwYcKECZPAhAkTJkyYMAlMmDBhwoQJk8CECRMmTJgwCUyYMGHChAmTwIQJEyZMi8d/9dSEmPZslEIAAAAASUVORK5CYII=">
-                </div>
-
-                
-            </div>
-
-            <!-- Comments -->
-            
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    
-    <hr />
-    <h3>Kommentare:</h3>
-    <div id="disqus_thread">
-        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    </div>
-
-
-
-                </div>
-            
         </div>
     </div>
-</article>
+</div>
 
 
 
@@ -384,7 +285,7 @@
         var dsq = document.createElement('script');
         dsq.type = 'text/javascript';
         dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     }());
 </script>
