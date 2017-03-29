@@ -10,6 +10,9 @@
 
     <!--Description-->
     
+        <meta name="description" content="作者｜ boxi来源｜ 36Kr
+近日，谷歌开发并开源了一种新的JPEG算法Guetzli，其可在图片质量不变的情况下，将文件大小降低35%。与WebP和WebM等其他图片压缩技术不同，谷歌的新JPEG技术完全兼容现有浏览器、设备、图片编辑应用和JPEG标准。本文经授权转载自36Kr。36Kr是中国">
+    
 
     <!--Author-->
     
@@ -18,7 +21,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="Roy&#39;s Blog"/>
+        <meta property="og:title" content="Google开源新算法，可将JPEG文件缩小35%"/>
     
 
     <!--Open Graph Description-->
@@ -29,7 +32,7 @@
 
     <!--Type page-->
     
-        <meta property="og:type" content="website" />
+        <meta property="og:type" content="article" />
     
 
     <!--Page Cover-->
@@ -40,7 +43,7 @@
 
     <!-- Title -->
     
-    <title>Archiv: 2017 - Roy&#39;s Blog</title>
+    <title>Google开源新算法，可将JPEG文件缩小35% - Roy&#39;s Blog</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
@@ -152,168 +155,87 @@
 </nav>
 
     <!-- Main Content -->
-    
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
 
-<!-- Page Header -->
-<!-- Set your background image for this header in the theme's configuration: index_cover -->
 <header class="intro-header" style="background-image: url('https://server-19860911.oss-cn-beijing.aliyuncs.com/hexoResource/1490575299745/images/pasted-0.png')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading">
-                    <h1>2017</h1>
+                <div class="post-heading">
+                    <h1>Google开源新算法，可将JPEG文件缩小35%</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                            Posted by Roy on
+                        
+                        2017-03-29
+                    </span>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
-<!-- Main Content -->
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+
+            <!-- Gallery -->
             
-                <div class="post-preview">
-    <a href="/2017/03/29/Google开源新算法，可将JPEG文件缩小35/">
-        <h1 class="post-title archive">
-            Google开源新算法，可将JPEG文件缩小35%
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-            Posted by Roy on
-        
-        2017-03-29
-    </p>
-</div>
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              <small class="copyright text-muted navbar-right">
+                 1,035字预计4分
+              </small>
+
+                <p><img src="https://server-19860911.oss-cn-beijing.aliyuncs.com/hexoResource/1490752297770/images/pasted-0.png" alt="upload successful"></p>
+<p>作者｜ boxi<br>来源｜ 36Kr</p>
+<p>近日，谷歌开发并开源了一种新的JPEG算法Guetzli，其可在图片质量不变的情况下，将文件大小降低35%。与WebP和WebM等其他图片压缩技术不同，谷歌的新JPEG技术完全兼容现有浏览器、设备、图片编辑应用和JPEG标准。本文经授权转载自36Kr。36Kr是中国最具影响力的互联网创投媒体，提供最新锐深度的商业报道。<br>一图胜千言。Web与过去冷冰冰的互联网最大的区别就在于多了丰富的图片。而web上面最流行的静态图片格式非JPEG莫属。JPEG文件的多寡往往会影响页面的加载速度。为此，Google开发了一种新的JPEG算法，可将文件大小减少35%，这无疑会提高网站的加载性能；此外新算法还可以在保持大小不变的情况下显著改善图片质量。更重要的是，Google的这种JPEG格式跟WebP、WebM等图像压缩办法不同，它可以完全与现有的浏览器、设备、图片编辑应用以及JPEG标准兼容。而且，Google还把它给开源出来了。</p>
+<p>GitHub地址：<a href="https://github.com/google/guetzli/" target="_blank" rel="external">https://github.com/google/guetzli/</a></p>
+<p>Google的这个新的JPEG编码器叫做Guetzli，由Google研究院苏黎世办公室领导开发。Guetzli在瑞士德语中是曲奇的意思，不过项目内容似乎跟曲奇并没有太大的关联，这也许是Google命名传统的延续，就像Android系统都是以糖果名称来命名那样。</p>
+<p>一般而言，优化JPEG图片质量与大小有好几种手段，不过Guetzli聚焦的是量化阶段的压缩。简而言之，量化就是把大量难以压缩的无序数据缩减为易于压缩的有序数据的过程。在JPEG的编码中，这一过程往往是通过将渐变的颜色简化为色块而把小的细节完全抹除掉。<br>不过这个过程的困难之处在于，要在抹除细节与缩小文件大小之间找到平衡。每一种有损编码器（比如libjpeg、x264、lame）的做法都不一样。</p>
+<p>而Guetzli的做法是利用一种新的精神性视觉模型（基于人类的视觉处理系统）来确定应该保留和丢弃哪些颜色和细节，它的名字叫做Butteraugli。Butteraugli的具体细节淹没在一堆高精度的常量之中，这些常量可以生成一个“近似于颜色感知和视觉”的模型，而且比其他的编码器更加透彻和详细。</p>
+<p>至于Google研究院是如何发现这些常量的就不得而知了。不过似乎是计算机生成的，或者至少是经过计算机优化的。之前Google曾经推出过一款可以将有码变成无码的AI软件，它可以利用两种神经网络从已知的图片中寻找与待补充细节匹配的新像素，并将添加进去。也许给神经网络提供足够丰富的图像语料库的话，AI就能概括出这种精神性视觉模型？</p>
+<p><img src="https://server-19860911.oss-cn-beijing.aliyuncs.com/hexoResource/1490752350868/images/pasted-0.png" alt="upload successful"></p>
+<p>编码器对比：左为原图，中为libjpeg的处理，右为Guetzli。</p>
+<p><img src="https://server-19860911.oss-cn-beijing.aliyuncs.com/hexoResource/1490752415452/images/pasted-0.png" alt="upload successful"></p>
+<p>左为原图，中为libjpeg的处理，右为Guetzli。</p>
+<p>虽然Guetzli的主要用途是减少文件大小，但Google研究院认为该编码器也可以在保持大小不变的同时用来提高JPEG可感知的画质。在于另一款流行的开源编码器libjpeg进行对比时，Google称“75%的打分更偏好Guetzli。这意味着Butteraugli的精神性视觉图像类似性指标在高画质方面接近于人类感知。</p>
+<p>不管是减少大小还是提高质量，Guetzli的开源对于JPEG这款高度流行的图片格式的作用都是深远的。不过，Google要实现这些效果也不是说没有任何代价，跟libjpeg相比，其编码需要的时间还是要多一些。</p>
+
+
+                <!-- size of one module in pixels, default 6 -->
+                <div class="text-center">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVYAAAFWCAAAAAAXxOpfAAAEGUlEQVR42u3bQXIbMQwEQP3/084DVN4aYKjI0jZOKWdlkU0fpgDu40e9oB4IsGLFqrBixaqwYsWqsGLFqrBixaqwYsWqsGLFqrBixaqwYsWqsGLFqrBixaqwYsWqsGLFqrBixaqwYsWqsH4U6yOu50/99huen3l+8reVJL//+hune8GKFStWrFixNs9coyeszc+vD3K3X6xYsWLFivWerMlyr2NNvo3pYUxZG3qsWLFixYoV6/VykxZJErCS9keyQqxYsWLFihXre1mTEJZ8S042HdVgxYoVK1asWPuhy6lLEkkT52y8w4oVK1asWLFetz96lL/w74+834oVK1asWLG+ibUPZHlTJjnU3f++fNdYsWLFihXrl7LmAaXZ0u753WjnVKjCihUrVqxY78PaXJGctjZ2r1hMw1kzmMGKFStWrFjvw5rHrOkSD4w6hlEvv6iBFStWrFixYp1uoBmW5NEtX0l/cRMrVqxYsWLF2m9gNw65Jsifz48fK1asWLFixbobvSQNmmaok3zj9JpFPvLBihUrVqxYseaNj127JAlep8JfPkDCihUrVqxYsebRJxljTNsouyA1/fa8NYMVK1asWLHejTWJNfk1x1ewTg/77BVMrFixYsWK9W6s0/FJP2Lpr25MV4gVK1asWLFinW6sQZwS7y5ivmLcghUrVqxYsX43awKdbzvf3rSVkx9n0nzBihUrVqxYse5GL8mnktZGPz7JI2CPixUrVqxYsX4ra39ZIX/Roh+oTCNgcpBYsWLFihXrnVkT7umLGaeGKDnW9ICxYsWKFStWrPlQZNeO6S9Y5LFvelkEK1asWLFixbprT0yD125L/SsZyfqxYsWKFStWrGcJeqbm+sX0MgdWrFixYsWKNd/AdHySj1KmQ5T8+be1WrBixYoVK9YPYW22kSy9H+QkjZXpYWPFihUrVqxYc9b+ImYSwvKQlAx4kpESVqxYsWLFirWPUznlqbXl0Woa77BixYoVK1asSTsjH6jkr1jkENMrmG+734oVK1asWLF+LOuudbLbzDQeNXxYsWLFihUr1iboTEca04sXyaemB9C0e7BixYoVK9bvZj3bmmniVNPuSb7lvwYsrFixYsWK9UNYXxFQzg5pkoB1HbwaUKxYsWLFivUOrNNQlYeeZHjT8+V/LlixYsWKFSvW6agjCS5T4rx1snsxIwl2WLFixYoVK9aeNQ9VzVDnbPzCihUrVqxYsfaszWsbu8HPLmxhxYoVK1asWE8NXZInd0zTNTSXNrBixYoVK1asU4g8JDWHcf3ZaUQ71XDBihUrVqxYv5VVYcWKVWHFilVhxYpVYcWKVWHFilVhxYpVYcWKVWHFilVhxYpVYcWKVWHFilVhxYpVYcWKFavCihWrwooVq8L65+sfLI0tHEtDIm0AAAAASUVORK5CYII=">
+                </div>
+
+                
+            </div>
+
+            <!-- Comments -->
             
-                <div class="post-preview">
-    <a href="/2017/03/28/写作也是工作的一种能力/">
-        <h1 class="post-title archive">
-            写作也是工作的一种能力
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-            Posted by Roy on
-        
-        2017-03-28
-    </p>
-</div>
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+    <hr />
+    <h3>Kommentare:</h3>
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+
+
+                </div>
             
-                <div class="post-preview">
-    <a href="/2017/03/28/欣赏一下壁纸/">
-        <h1 class="post-title archive">
-            书有可浅尝者，有可吞食者，少数则须咀嚼消化
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-            Posted by Roy on
-        
-        2017-03-28
-    </p>
-</div>
-            
-                <div class="post-preview">
-    <a href="/2017/03/27/奥森公园/">
-        <h1 class="post-title archive">
-            奥森公园
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-            Posted by Roy on
-        
-        2017-03-27
-    </p>
-</div>
-            
-                <div class="post-preview">
-    <a href="/2017/03/26/梦的解析/">
-        <h1 class="post-title archive">
-            梦的解析
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-            Posted by Roy on
-        
-        2017-03-26
-    </p>
-</div>
-            
-                <div class="post-preview">
-    <a href="/2017/03/26/hello-world/">
-        <h1 class="post-title archive">
-            Hexo!  Hello World
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-            Posted by roy on
-        
-        2017-03-26
-    </p>
-</div>
-            
-                <div class="post-preview">
-    <a href="/2017/03/26/gulp/">
-        <h1 class="post-title archive">
-            gulp前端构建工具讲义
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-            Posted by Roy on
-        
-        2017-03-26
-    </p>
-</div>
-            
-                <div class="post-preview">
-    <a href="/2017/03/26/hexo-image-用阿里云存储/">
-        <h1 class="post-title archive">
-            hexo image 用阿里云存储
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-            Posted by Roy on
-        
-        2017-03-26
-    </p>
-</div>
-            
-                <div class="post-preview">
-    <a href="/2017/03/25/为什么开这个blog/">
-        <h1 class="post-title archive">
-            为什么开这个blog
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-        2017-03-25
-    </p>
-</div>
-            
-            <div class="archive-before-pagination"></div>
-            <ul class="pager">
-    
-    
-</ul>
         </div>
     </div>
-</div>
+</article>
 
 
 
@@ -403,7 +325,7 @@
         var dsq = document.createElement('script');
         dsq.type = 'text/javascript';
         dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     }());
 </script>

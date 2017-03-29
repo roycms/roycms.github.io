@@ -4,6 +4,50 @@
   
     
     <entry>
+      <title><![CDATA[Google开源新算法，可将JPEG文件缩小35%]]></title>
+      <url>https://www.19860911.cn/2017/03/29/Google%E5%BC%80%E6%BA%90%E6%96%B0%E7%AE%97%E6%B3%95%EF%BC%8C%E5%8F%AF%E5%B0%86JPEG%E6%96%87%E4%BB%B6%E7%BC%A9%E5%B0%8F35/</url>
+      <content type="html"><![CDATA[<p><img src="https://server-19860911.oss-cn-beijing.aliyuncs.com/hexoResource/1490752297770/images/pasted-0.png" alt="upload successful"></p>
+<p>作者｜ boxi<br>来源｜ 36Kr</p>
+<p>近日，谷歌开发并开源了一种新的JPEG算法Guetzli，其可在图片质量不变的情况下，将文件大小降低35%。与WebP和WebM等其他图片压缩技术不同，谷歌的新JPEG技术完全兼容现有浏览器、设备、图片编辑应用和JPEG标准。本文经授权转载自36Kr。36Kr是中国最具影响力的互联网创投媒体，提供最新锐深度的商业报道。<br>一图胜千言。Web与过去冷冰冰的互联网最大的区别就在于多了丰富的图片。而web上面最流行的静态图片格式非JPEG莫属。JPEG文件的多寡往往会影响页面的加载速度。为此，Google开发了一种新的JPEG算法，可将文件大小减少35%，这无疑会提高网站的加载性能；此外新算法还可以在保持大小不变的情况下显著改善图片质量。更重要的是，Google的这种JPEG格式跟WebP、WebM等图像压缩办法不同，它可以完全与现有的浏览器、设备、图片编辑应用以及JPEG标准兼容。而且，Google还把它给开源出来了。</p>
+<p>GitHub地址：<a href="https://github.com/google/guetzli/" target="_blank" rel="external">https://github.com/google/guetzli/</a></p>
+<p>Google的这个新的JPEG编码器叫做Guetzli，由Google研究院苏黎世办公室领导开发。Guetzli在瑞士德语中是曲奇的意思，不过项目内容似乎跟曲奇并没有太大的关联，这也许是Google命名传统的延续，就像Android系统都是以糖果名称来命名那样。</p>
+<p>一般而言，优化JPEG图片质量与大小有好几种手段，不过Guetzli聚焦的是量化阶段的压缩。简而言之，量化就是把大量难以压缩的无序数据缩减为易于压缩的有序数据的过程。在JPEG的编码中，这一过程往往是通过将渐变的颜色简化为色块而把小的细节完全抹除掉。<br>不过这个过程的困难之处在于，要在抹除细节与缩小文件大小之间找到平衡。每一种有损编码器（比如libjpeg、x264、lame）的做法都不一样。</p>
+<p>而Guetzli的做法是利用一种新的精神性视觉模型（基于人类的视觉处理系统）来确定应该保留和丢弃哪些颜色和细节，它的名字叫做Butteraugli。Butteraugli的具体细节淹没在一堆高精度的常量之中，这些常量可以生成一个“近似于颜色感知和视觉”的模型，而且比其他的编码器更加透彻和详细。</p>
+<p>至于Google研究院是如何发现这些常量的就不得而知了。不过似乎是计算机生成的，或者至少是经过计算机优化的。之前Google曾经推出过一款可以将有码变成无码的AI软件，它可以利用两种神经网络从已知的图片中寻找与待补充细节匹配的新像素，并将添加进去。也许给神经网络提供足够丰富的图像语料库的话，AI就能概括出这种精神性视觉模型？</p>
+<p><img src="https://server-19860911.oss-cn-beijing.aliyuncs.com/hexoResource/1490752350868/images/pasted-0.png" alt="upload successful"></p>
+<p>编码器对比：左为原图，中为libjpeg的处理，右为Guetzli。</p>
+<p><img src="https://server-19860911.oss-cn-beijing.aliyuncs.com/hexoResource/1490752415452/images/pasted-0.png" alt="upload successful"></p>
+<p>左为原图，中为libjpeg的处理，右为Guetzli。</p>
+<p>虽然Guetzli的主要用途是减少文件大小，但Google研究院认为该编码器也可以在保持大小不变的同时用来提高JPEG可感知的画质。在于另一款流行的开源编码器libjpeg进行对比时，Google称“75%的打分更偏好Guetzli。这意味着Butteraugli的精神性视觉图像类似性指标在高画质方面接近于人类感知。</p>
+<p>不管是减少大小还是提高质量，Guetzli的开源对于JPEG这款高度流行的图片格式的作用都是深远的。不过，Google要实现这些效果也不是说没有任何代价，跟libjpeg相比，其编码需要的时间还是要多一些。</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[写作也是工作的一种能力]]></title>
+      <url>https://www.19860911.cn/2017/03/28/%E5%86%99%E4%BD%9C%E4%B9%9F%E6%98%AF%E5%B7%A5%E4%BD%9C%E7%9A%84%E4%B8%80%E7%A7%8D%E8%83%BD%E5%8A%9B/</url>
+      <content type="html"><![CDATA[<p>写作作为一种技能，在现代社会分工明细的环境下，这种能力哟喂</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
+      <title><![CDATA[书有可浅尝者，有可吞食者，少数则须咀嚼消化]]></title>
+      <url>https://www.19860911.cn/2017/03/28/%E6%AC%A3%E8%B5%8F%E4%B8%80%E4%B8%8B%E5%A3%81%E7%BA%B8/</url>
+      <content type="html"><![CDATA[<blockquote>
+<p>Some books are to be tasted, others to be swallowed, and some few to be chewed and digested; that is, some books are to be read only in parts; others to be read, but not curiously; and some few to be read wholly, and with diligence and attention. 书有可浅尝者，有可吞食者，少数则须咀嚼消化。换言之，有只须读其部分者，有只须大体涉猎者，少数则须全读，读时须全神贯注，孜孜不倦。   —培根《论读书》</p>
+</blockquote>
+<p><img src="https://server-19860911.oss-cn-beijing.aliyuncs.com/hexoResource/1490692802051/images/pasted-0.png" alt="upload successful"></p>
+<p><img src="https://server-19860911.oss-cn-beijing.aliyuncs.com/hexoResource/1490692811098/images/pasted-0.png" alt="upload successful"></p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[奥森公园]]></title>
       <url>https://www.19860911.cn/2017/03/27/%E5%A5%A5%E6%A3%AE%E5%85%AC%E5%9B%AD/</url>
       <content type="html"><![CDATA[<p><img src="https://server-19860911.oss-cn-beijing.aliyuncs.com/hexoResource/1490576625996/images/pasted-0.png" alt="upload successful"></p>
