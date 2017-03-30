@@ -4,6 +4,21 @@
   
     
     <entry>
+      <title><![CDATA[如何优雅的选择字体(font-family)]]></title>
+      <url>https://www.19860911.cn/2017/03/30/%E5%A6%82%E4%BD%95%E4%BC%98%E9%9B%85%E7%9A%84%E9%80%89%E6%8B%A9%E5%AD%97%E4%BD%93-font-family/</url>
+      <content type="html"><![CDATA[<p>大家都知道，在不同操作系统、不同游览器里面默认显示的字体是不一样的，并且相同字体在不同操作系统里面渲染的效果也不尽相同，那么如何设置字体显示效果会比较好呢？</p>
+<p>很不错的一篇文章   <a href="https://segmentfault.com/a/1190000006110417" target="_blank" rel="external">https://segmentfault.com/a/1190000006110417</a></p>
+<p>例1（小米米官网）：font-family: “Arial”,”Microsoft YaHei”,”黑体”,”宋体”,sans-serif;</p>
+<p>例2（淘宝技术研发中心）：font: 12px/1.5 Tahoma,Helvetica,Arial,’宋体’,sans-serif;</p>
+<p>例3（加网 ）：font: 14px/1.5 ‘Microsoft YaHei’,arial,tahoma,\5b8b\4f53,sans-serif;</p>
+<p>例4（淘宝UED）：font: 12px/1 Tahoma,Helvetica,Arial,”\5b8b\4f53”,sans-serif;</p>
+<p>例5（一淘UX）: font-family: Helvetica, ‘Hiragino Sans GB’, ‘Microsoft Yahei’, ‘微软雅黑’, Arial, sans-serif;</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[ios 开发相关下载推荐]]></title>
       <url>https://www.19860911.cn/2017/03/30/ios-%E5%BC%80%E5%8F%91%E7%9B%B8%E5%85%B3%E4%B8%8B%E8%BD%BD%E6%8E%A8%E8%8D%90/</url>
       <content type="html"><![CDATA[<h3 id="MOU"><a href="#MOU" class="headerlink" title="MOU"></a>MOU</h3><p>对于熟悉Markdown的人来说，Mou是一款不错的文本编辑器（Mac平台）。<br>相比同类型产品，Mou 在功能性和易用性上都有众多特色，在其简单的界面之后，不仅拥有自定义样式、增量搜索、中文字体“漂移”优化，还支持终端命令行启动、内容发布、竖版文字布局，甚至还可以作为任务列表使用，其Markdown双栏布局的实时预览和同步滚动功能更是被众多应用借鉴和采用。   </p>
