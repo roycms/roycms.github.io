@@ -13,7 +13,7 @@
 .serif,
 body,
 .intro-header .post-heading .meta {
-  font-family: 'Lora', 'Times New Roman', serif;
+  font-family: Helvetica, Tahoma, Arial, sans-serif;
 }
 .sans-serif,
 h1,
@@ -29,14 +29,14 @@ h6,
 .btn,
 .pager li > a,
 .pager li > span {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Tahoma, Arial, sans-serif;
 }
 body {
-  font-size: 20px;
+  font-size: 18px;
   color: #404040;
 }
 p {
-  line-height: 1.5;
+  line-height: 1.8;
   margin: 30px 0;
 }
 p a,
