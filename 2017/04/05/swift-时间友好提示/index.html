@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="废话不多直接上代码
+
+备注 NSLocalizedString()是国际化支持
+
+1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="Roy">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="swift 时间友好提示"/>
+    
+
+    <!--Open Graph Description-->
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="Roy&#39;s Blog"/>
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="article" />
+    
+
+    <!--Page Cover-->
+    
+
+        <meta name="twitter:card" content="summary" />
+    
+
+    <!-- Title -->
+    
+    <title>swift 时间友好提示 - Roy&#39;s Blog</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet" />
+
+    <!-- Google Analytics -->
+    
+
+
+    <!-- favicon -->
+    
+    <link rel="icon" href="https://server-19860911.oss-cn-beijing.aliyuncs.com/hexoResource/1490602935458/images/pasted-0.png">
+    
+	
+</head>
+
+
+<body>
+
+    <!-- Menu -->
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Roy's Blog</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                
+                    <li>
+                        <a href="/">
+                            
+                                Home
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/archives">
+                            
+                                Archives
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/photo">
+                            
+                                Photo
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/About">
+                            
+                                About
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://git.oschina.net/roycms">
+                            
+                                OSChina
+                            
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://github.com/roycms">
+                            
+                                <i class="fa fa-github fa-stack-2x"></i>
+                            
+                        </a>
+                    </li>
+                
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+    <!-- Main Content -->
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
+
+<header class="intro-header" style="background-image: url('https://server-19860911.oss-cn-beijing.aliyuncs.com/hexoResource/1490575299745/images/pasted-0.png')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>swift 时间友好提示</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                            Posted by Roy on
+                        
+                        2017-04-05
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+
+            <!-- Gallery -->
+            
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              <small class="copyright text-muted navbar-right">
+                 323字预计2分
+              </small>
+
+                <p>废话不多直接上代码</p>
+<blockquote>
+<p>备注 NSLocalizedString()是国际化支持</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div></pre></td><td class="code"><pre><div class="line">//</div><div class="line">//  TimeAgo.swift</div><div class="line">//  TimeAgo</div><div class="line">//</div><div class="line">//  Created by roycms on 2017/3/15.</div><div class="line">//  Copyright © 2017年 北京三芳科技有限公司. All rights reserved.</div><div class="line">//</div><div class="line"></div><div class="line"></div><div class="line">import Foundation</div><div class="line"></div><div class="line">public extension NSDate &#123;</div><div class="line">    public func ago() -&gt; String &#123;</div><div class="line">        return funTimeAgo(self as Date)</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    public var timeAgo:String&#123;</div><div class="line">        get&#123;</div><div class="line">            return funTimeAgo(self as Date)</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">public extension Double &#123;</div><div class="line">    </div><div class="line">    public func ago() -&gt; String &#123;</div><div class="line">        return funStampTimeAgo(self as Double)</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    public var timeAgo:String&#123;</div><div class="line">        get&#123;</div><div class="line">            return funStampTimeAgo(self as Double)</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">func funStampTimeAgo(_ date: Double) -&gt; String&#123;</div><div class="line">    </div><div class="line">    return funTimeAgo(NSDate(timeIntervalSince1970: TimeInterval(date)) as Date)</div><div class="line">&#125;</div><div class="line"></div><div class="line">func funTimeAgo(_ date: Date) -&gt; String &#123;</div><div class="line">    </div><div class="line">    let calendar = Calendar.current</div><div class="line">    let now = Date()</div><div class="line">    let unitFlags: NSCalendar.Unit = [.second, .minute, .hour, .day, .weekOfYear, .month, .year]</div><div class="line">    let components = (calendar as NSCalendar).components(unitFlags, from: date, to: now, options: [])</div><div class="line">    </div><div class="line">    if let year = components.year, year &gt;= 2 &#123;</div><div class="line">        return &quot;\(year) &quot; + NSLocalizedString(&quot;yearsAgo&quot;,comment:&quot;years ago&quot;)</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    if let year = components.year, year &gt;= 1 &#123;</div><div class="line">        return  NSLocalizedString(&quot;LastYear&quot;,comment:&quot;Last year&quot;)</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    if let month = components.month, month &gt;= 2 &#123;</div><div class="line">        return &quot;\(month) &quot; + NSLocalizedString(&quot;monthsAgo&quot;,comment:&quot;months ago&quot;)</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    if let month = components.month, month &gt;= 1 &#123;</div><div class="line">        return NSLocalizedString(&quot;LastMonth&quot;,comment:&quot;Last month&quot;)</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    if let week = components.weekOfYear, week &gt;= 2 &#123;</div><div class="line">        return &quot;\(week) &quot; + NSLocalizedString(&quot;weeksAgo&quot;,comment:&quot;weeks ago&quot;)</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    if let week = components.weekOfYear, week &gt;= 1 &#123;</div><div class="line">        return NSLocalizedString(&quot;LastWeek&quot;,comment:&quot;Last week&quot;)</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    if let day = components.day, day &gt;= 2 &#123;</div><div class="line">        return &quot;\(day) &quot; + NSLocalizedString(&quot;daysAgo&quot;,comment:&quot;days ago&quot;)</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    if let day = components.day, day &gt;= 1 &#123;</div><div class="line">        return  NSLocalizedString(&quot;Yesterday&quot;,comment:&quot;Yesterday&quot;)</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    if let hour = components.hour, hour &gt;= 2 &#123;</div><div class="line">        return &quot;\(hour) &quot; + NSLocalizedString(&quot;hoursAgo&quot;,comment:&quot;hours ago&quot;)</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    if let hour = components.hour, hour &gt;= 1 &#123;</div><div class="line">        return NSLocalizedString(&quot;AnHourAgo&quot;,comment:&quot;An hour ago&quot;)</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    if let minute = components.minute, minute &gt;= 2 &#123;</div><div class="line">        return &quot;\(minute) &quot; + NSLocalizedString(&quot;minutesAgo&quot;,comment:&quot;minutes ago&quot;)</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    if let minute = components.minute, minute &gt;= 1 &#123;</div><div class="line">        return  NSLocalizedString(&quot;AMinuteAgo&quot;,comment:&quot;A minute ago&quot;)</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    if let second = components.second, second &gt;= 3 &#123;</div><div class="line">        return &quot;\(second) &quot; + NSLocalizedString(&quot;secondsAgo&quot;,comment:&quot;seconds ago&quot;)</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    return NSLocalizedString(&quot;JustNow&quot;,comment:&quot;Just now&quot;)</div><div class="line">    </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+
+                <!-- size of one module in pixels, default 6 -->
+                <div class="text-center">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAAE+CAAAAAAxUyPsAAADpklEQVR42u3bW27DMBADwNz/0u0BihqkVrWVZvarQPOwxj8MJb++zGBeCPDhw4fP4MOHD5/Bhw8fPoMPHz58Bh8+fPjwGXz48OEz+PDhw2fw4cOHz+DDhw8fPoMPHz58Bh8+fPjMVr5XPD/fdf1p16/87dvbb8mvGR8+fPjw4TuHr33Nbxf68+9rghZ0cs348OHDhw/faXw5Svtp7Y3Jw1Byzfjw4cOHD9+78+U/0fPl5QEIHz58+PDh+0y+eRGwVrjjw4cPHz58/4MvJ56Ekus6ICkp3nivAx8+fPjw4SsPe53z91ue78OHDx8+fB/Pt5f7Omq0AWUSQRZXhw8fPnz48D1a1rfV/Fpp3saOvWEFHz58+PDhu58vjyNJ+Ejeu21jeysiPnz48OHDd09l0G5L55Elr/uT4qA9jI4PHz58+PCdzJdcYl6vzx/TysuIx46G48OHDx8+fJsiy/wxqvaxrl0Pbj1wvg8fPnz48OHbFF8S9AQrrxvmsWkkgA8fPnz48N1e1ueg7QG1XcGoPZiODx8+fPjwncbXLr4t/ScxJcE9Lvfhw4cPHz58S/GlPSyeb3XnYaXdbHi4rMeHDx8+fPiWosa8rG8/ZxJikvoDHz58+PDhO4dvLazs+vGfL769Nnz48OHDh+9MvmRhSWRpK/5keyA57rZrsxwfPnz48OG7p6xvF5n87G9/xrdRqb1V+PDhw4cP3zl8CVZ7yDuPMvNC4Yij4fjw4cOHD98YMSno23iRR6I20GxYNT58+PDhw3djZbB2LLt9+CoPK2sPZT0QXPDhw4cPH75NZX17BG0tlEy+N7+d+PDhw4cP3wl8+cbzJIJcf1pexLf/xYcPHz58+M7kW6vF28rgOuKslRrt0XZ8+PDhw4fvHL7k6/MCva0D8lvbRh98+PDhw4fvfL52wW1waY+svZYGHz58+PDhO43v78r9JHzsqvIfqwzw4cOHDx++Acc8BKwd2s43BvK/b60M8OHDhw8fvkFl0C5v1wGytkSYxxR8+PDhw4fvWb48NKwd6c4319dK+Yf3OvDhw4cPH74b+eaLaev49ubhw4cPHz5878uXUCbf9RccbxBc8OHDhw8fvvI1eUGfvHJy+Cy55fjw4cOHD99pfG0hnrx37QbMH+I6+mg4Pnz48OH7eD6DDx8+fPgMPnz48Bl8+PDhM/jw4cNn8OHDh8/gw4cPHz6DDx8+fAYfPnz4DD58+PAZfPjw4cNn8OHDh8/E8w01BhYPGExTbAAAAABJRU5ErkJggg==">
+                </div>
+
+                
+            </div>
+
+            <!-- Comments -->
+            
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+    <hr />
+    <h3>Kommentare:</h3>
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+
+
+                </div>
+            
+        </div>
+    </div>
+</article>
+
+
+
+    <!-- Footer -->
+    <hr />
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                    
+
+                    
+                        <li>
+                            <a href="https://www.facebook.com/duyaohui1986" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a href="https://github.com/roycms" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a href="http://www.linkedin.com/in/%E8%80%80%E8%BE%89-%E6%9D%9C-b352b890/" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                        <li>
+                            <a href="mailto:roycms@qq.com" target="_blank">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    
+
+                    
+                </ul>
+                <p class="copyright text-muted">&copy; 2017 Roy<br></p>
+                <p class="copyright text-muted">Original Theme <a target="_blank" href="http://startbootstrap.com/template-overviews/clean-blog/">Clean Blog</a> from <a href="http://startbootstrap.com/" target="_blank">Start Bootstrap</a></p>
+                <p class="copyright text-muted">Adapted for <a target="_blank" href="https://hexo.io/">Hexo</a> by <a href="http://www.codeblocq.com/" target="_blank">Jonathan Klughertz</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- After footer scripts -->
+    
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Disqus Comments -->
+
+<script type="text/javascript">
+    var disqus_shortname = 'roys-blog';
+
+    (function(){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+</body>
+
+</html>
