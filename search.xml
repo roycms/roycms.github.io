@@ -4,6 +4,16 @@
   
     
     <entry>
+      <title><![CDATA[GitHub Pages + Custom Domain + HTTPS  我也是醉了]]></title>
+      <url>https://www.19860911.cn/2017/04/05/%E6%88%91%E4%B9%9F%E6%98%AF%E9%86%89%E4%BA%86/</url>
+      <content type="html"><![CDATA[<p>收到来自 Kloudsec 的邮件，说 Kloudsec 将于 2016/08/01 停止服务。</p>
+<p>刚刚瞄上 hexo + GitHub Pages 搞了一个优雅的博客，想着满世界的搜罗 GitHub Pages + Custom Domain + HTTPS 的解决方案，终于找到了个Kloudsec的中间层方案，刚刚弄好，就收到停服的邮件，我也是醉了，我再也不折腾 GitHub Pages的HTTPS 了除非这个亲娘（github pages）本身支持了Custom Domain的https ，否则我是再也不折腾这个事情了。</p>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[如何优雅的选择字体(font-family)]]></title>
       <url>https://www.19860911.cn/2017/03/30/%E5%A6%82%E4%BD%95%E4%BC%98%E9%9B%85%E7%9A%84%E9%80%89%E6%8B%A9%E5%AD%97%E4%BD%93-font-family/</url>
       <content type="html"><![CDATA[<p>大家都知道，在不同操作系统、不同游览器里面默认显示的字体是不一样的，并且相同字体在不同操作系统里面渲染的效果也不尽相同，那么如何设置字体显示效果会比较好呢？</p>

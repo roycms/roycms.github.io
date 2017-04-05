@@ -10,8 +10,8 @@
 
     <!--Description-->
     
-        <meta name="description" content="第一步安装 hexo-admin,co,ali-oss1234cd 项目目录npm install hexo-admin npm install conpm install ali-oss
-第二步open /node_modules/hexo-admin/api.js 在头部加入代码12var co">
+        <meta name="description" content="收到来自 Kloudsec 的邮件，说 Kloudsec 将于 2016/08/01 停止服务。
+刚刚瞄上 hexo + GitHub Pages 搞了一个优雅的博客，想着满世界的搜罗 GitHub Pages + Custom Domain + HTTPS 的解决方案，终于找到了个Kloudsec">
     
 
     <!--Author-->
@@ -21,7 +21,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="hexo image 用阿里云存储"/>
+        <meta property="og:title" content="GitHub Pages + Custom Domain + HTTPS  我也是醉了"/>
     
 
     <!--Open Graph Description-->
@@ -43,7 +43,7 @@
 
     <!-- Title -->
     
-    <title>hexo image 用阿里云存储 - Roy&#39;s Blog</title>
+    <title>GitHub Pages + Custom Domain + HTTPS  我也是醉了 - Roy&#39;s Blog</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
@@ -163,14 +163,14 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
-                    <h1>hexo image 用阿里云存储</h1>
+                    <h1>GitHub Pages + Custom Domain + HTTPS  我也是醉了</h1>
                     
                     <span class="meta">
                         <!-- Date and Author -->
                         
                             Posted by Roy on
                         
-                        2017-03-26
+                        2017-04-05
                     </span>
                 </div>
             </div>
@@ -185,25 +185,6 @@
 
             <!-- Tags and categories -->
            
-                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 post-tags">
-                    
-                        
-
-
-<a href="/tags/技术/">#技术</a> <a href="/tags/阿里云/">#阿里云</a> <a href="/tags/hexo/">#hexo</a>
-
-
-                    
-                </div>
-                <div class="col-lg-4 col-md-5 post-categories">
-                    
-                        
-
-<a href="/categories/技术/">技术</a>
-
-                    
-                </div>
-            
 
             <!-- Gallery -->
             
@@ -211,19 +192,16 @@
             <!-- Post Main Content -->
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
               <small class="copyright text-muted navbar-right">
-                 203字预计1分
+                 123字预计1分
               </small>
 
-                <h4 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h4><p>安装 hexo-admin,co,ali-oss<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">cd 项目目录</div><div class="line">npm install hexo-admin </div><div class="line">npm install co</div><div class="line">npm install ali-oss</div></pre></td></tr></table></figure></p>
-<h4 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h4><p>open /node_modules/hexo-admin/api.js 在头部加入代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var co = require(&apos;co&apos;)</div><div class="line">var oss = require(&apos;ali-oss&apos;)</div></pre></td></tr></table></figure></p>
-<p>在 module.exports 内初始化阿里云<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">module.exports = function (app, hexo) &#123;</div><div class="line"></div><div class="line">  //初始化阿里云</div><div class="line">  var client = new oss(&#123;</div><div class="line">    region: &apos;你的region&apos;,</div><div class="line">    accessKeyId: &apos;你的accessKeyId&apos;,</div><div class="line">    accessKeySecret: &apos;你的accessKeySecret&apos;</div><div class="line">  &#125;);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>在 400 行代码处找到如下代码 注释掉或者删除<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">hexo.log.d(`saving image to $&#123;outpath&#125;`)</div><div class="line">fs.writeFile(outpath, buf, function (err) &#123;</div><div class="line">  if (err) &#123;</div><div class="line">    console.log(err)</div><div class="line">  &#125;</div><div class="line">  hexo.source.process().then(function () &#123;</div><div class="line">    res.done(&#123;</div><div class="line">      src: path.join(hexo.config.root + filename),</div><div class="line">      msg: msg</div><div class="line">    &#125;)</div><div class="line">  &#125;);</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
-<p>在400行处添加代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">var objectKey = &quot;hexoResource/&quot; + Date.now() + filename</div><div class="line"></div><div class="line">  co(function* () &#123;</div><div class="line">    client.useBucket(&apos;server-19860911&apos;);</div><div class="line">    var result = yield client.put(objectKey, buf);</div><div class="line">    // console.log(&quot;|||||||||||||=======&quot;+result);</div><div class="line">    var returnFileName = &quot;https://server-19860911.oss-cn-beijing.aliyuncs.com/&quot; + objectKey</div><div class="line">    hexo.source.process().then(function () &#123;</div><div class="line">      res.done(&#123;</div><div class="line">        src: returnFileName,</div><div class="line">        msg: msg</div><div class="line">      &#125;)</div><div class="line">    &#125;);</div><div class="line"></div><div class="line">  &#125;).catch(function (err) &#123;</div><div class="line">    console.log(&quot;|||||||||||||&quot;+err);</div><div class="line">  &#125;);</div></pre></td></tr></table></figure></p>
+                <p>收到来自 Kloudsec 的邮件，说 Kloudsec 将于 2016/08/01 停止服务。</p>
+<p>刚刚瞄上 hexo + GitHub Pages 搞了一个优雅的博客，想着满世界的搜罗 GitHub Pages + Custom Domain + HTTPS 的解决方案，终于找到了个Kloudsec的中间层方案，刚刚弄好，就收到停服的邮件，我也是醉了，我再也不折腾 GitHub Pages的HTTPS 了除非这个亲娘（github pages）本身支持了Custom Domain的https ，否则我是再也不折腾这个事情了。</p>
 
 
                 <!-- size of one module in pixels, default 6 -->
                 <div class="text-center">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAAE+CAAAAAAxUyPsAAADmklEQVR42u3bQXKDQAwEQP//08kDUlCj1QIibp1csQNLcxGj5fOjGvVBgA8fPnwKHz58+BQ+fPjwKXz48OFT+PDhw4dP4cOHD5/Chw8fPoUPHz58Ch8+fPjwKXz48OFT+PDhw6e28n3iOvrfv8c5/0vybX6u6prx4cOHDx++CXy7fnO09CpTQt9fMz58+PDhw/csX770pKE5b2XyxiW5GdU2CB8+fPjw4XsX39Fjf/XxPmlu1m4nPnz48OHD95/48tbkqKHZ1crgw4cPHz587+XLiZMjJJeURw9XDBjw4cOHDx++p/jyzV5zPr9yfx8+fPjw4ft6vg53/mCfh/JJ9HDh1eHDhw8fPnyPhvX9rd7VcGHv6B0fPnz48OGbz5cH5Z2ReX4bqqOCDiI+fPjw4cP3bOOSLKjK1LnUpEF5YNaBDx8+fPjwbY3jO9B7N5/lW9zw4cOHDx++yXyd16iqDUpyruTbQRvU8OHDhw8fvk3BQU65K9C/YjyPDx8+fPjwTeM7X1wnPqi2Kf0x/GNhPT58+PDhw1cMC6rhe952VB/yq7j9mB4fPnz48OG7ky8P8XPQfHCeb3FLjvzY/j58+PDhw4ev0bjkF5M8tHcal/6YAR8+fPjw4ZvDd94c3P/AX73Z+VXgw4cPHz580/iSJa6NzPOgP2+Pjo7Ziezx4cOHDx++e/iq4+0k7q9e2Noa+gE9Pnz48OHDdyffebuwK27II4n8aMnf8eHDhw8fvpl8yTa1hDvfrFYdhHfOiw8fPnz48M3hSyL4O+P1HD1vg/Dhw4cPH76ZfHm8vtaOVNuUTlOFDx8+fPjwzeTLX8fKF1dtbqr0e0fj+PDhw4cP3/18azHBrqH12o2p3jZ8+PDhw4dvMt/a43qVeG80329l8OHDhw8fvjv5kuC+c5H5eXOmQZEBPnz48OHDd0GtLX0taKg2QPjw4cOHD998vk9ceWRQhU42meWfH3unDR8+fPjw4VuKDDpM1UvqxPT5evDhw4cPH76ZfPnouhP0rxEnTdWIXQb48OHDhw/fBXx9oIQ+b4zWGjJ8+PDhw4fvLXzJcvvbxHOOV0YG+PDhw4fv6/n6v1nbIJ5HAPkwHh8+fPjw4ZvMVw3E8yNUG4vqRre9L2vhw4cPHz58V/MpfPjw4cOn8OHDh0/hw4cPn8KHDx8+hQ8fPnwKHz58+PApfPjw4VP48OHDp/Dhw4dP4cOHDx8+hQ8fPnwqrl8eoj7Y1lBr9gAAAABJRU5ErkJggg==">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASYAAAEmCAAAAADqr2IGAAAC/klEQVR42u3bQZLjIAwF0Nz/0t0nCPWFcDDF02rKzdjmZYEk8OdPBPFBgAkTJkyYMAlMmDBhwoQJk8CECRMmTJgwCUyYMGHChAmTwIQJEyZMmDAJTJgwYcKECZPAhAkTJkyXMX3iqN4tecq3vz7xbpgwYcKE6Wam/pgcJb/zE++GCRMmTJhuZhovzOPXSq5X71/9v5gwYcKECdOqaYyvJE/5NklMmDBhwoTpnUyd++dkmDBhwoQJ09NN3jwhyLcwE6bDeuGYMGHChOllTPnhmN//+8jzTZgwYcKE6TVM/QRivJGZFMadCU/OAhMmTJgwXcOUL8DVkng8Mv8BViUBmDBhwoTpTqZ88U7GJ1jJDzM3HhMmTJgwYapOvnNcdS5FSI71bEsIMGHChAnTsUz50p7QzE3vl+1gTJgwYcJ0D1PniGrn+Ona9AITJkyYMGGaSwiqDdxkIe9/vLG5F44JEyZMmA5kSmjmWr05+hzltl44JkyYMGE6imnVxKrXq2lBXq5jwoQJEyZM+cJfJUuK1WryUS25MWHChAkTprXFcPLS1STgpR9jYMKECROmo5j6pWy1cE2W+epzMWHChAkTpuoi3QGtTibfLt2cEGDChAkTpgOZkumNr/QPkuYN3Lz5iwkTJkyYMI0X47njMtXjqp3jQZ0yGBMmTJgw3cZUHZNMOy+Dky3MTmmNCRMmTJgwLS4s443MTgmNCRMmTJgw9ZnmiuG5Qz/VNvHmI6qYMGHChOkQpn6p/MT259zPiQkTJkyYMFUX4CQV6B+7+WV7FxMmTJgw3clULY+rHygmz5prDWPChAkTJkwdgupiPMdXTVD6aQEmTJgwYcK06kBP/ulFdeTmXV9MmDBhwnQBUzKxzp1XFbqYMGHChAnTc2PGyUTS0u0XupgwYcKECVOntbpqma9ui25o8mLChAkTpgOZ7gxMmDBhwoQJk8CECRMmTJgwCUyYMGHChAmTwIQJEyZMmDAJTJgwYcKECZPAhAkTJkyYMAlMmDBhwnR4/ANY4BQXr/s2RwAAAABJRU5ErkJggg==">
                 </div>
 
                 
