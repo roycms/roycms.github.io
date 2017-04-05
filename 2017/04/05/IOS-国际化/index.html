@@ -10,10 +10,13 @@
 
     <!--Description-->
     
-        <meta name="description" content="网页内的文字要在不同的设备终端达到最佳的显示效果，我们来看看大咖公司都是怎么做的吧。
-在不同操作系统、不同游览器里面默认显示的字体是不一样的，并且相同字体在不同操作系统里面渲染的效果也不尽相同，那么如何设置字体显示效果会比较好呢？
+        <meta name="description" content="APP对语言的支持实现
+1.首先在解决方案内添加语言的支持
+2.新建一个 Localizable.strings 文件，选择需要的语言支持
 
-推荐阅读 https://segmentfault.com/a/1">
+
+
+3.在Base 内输入一下代码1234567891011121314yearsAgo  = &amp;quot;years ago&amp;quot;;LastYear ">
     
 
     <!--Author-->
@@ -23,7 +26,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="如何优雅的选择字体(font-family)"/>
+        <meta property="og:title" content="IOS 国际化"/>
     
 
     <!--Open Graph Description-->
@@ -45,7 +48,7 @@
 
     <!-- Title -->
     
-    <title>如何优雅的选择字体(font-family) - Roy&#39;s Blog</title>
+    <title>IOS 国际化 - Roy&#39;s Blog</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
@@ -165,14 +168,14 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
-                    <h1>如何优雅的选择字体(font-family)</h1>
+                    <h1>IOS 国际化</h1>
                     
                     <span class="meta">
                         <!-- Date and Author -->
                         
                             Posted by Roy on
                         
-                        2017-03-30
+                        2017-04-05
                     </span>
                 </div>
             </div>
@@ -194,24 +197,22 @@
             <!-- Post Main Content -->
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
               <small class="copyright text-muted navbar-right">
-                 211字预计1分
+                 113字预计1分
               </small>
 
-                <p>网页内的文字要在不同的设备终端达到最佳的显示效果，我们来看看大咖公司都是怎么做的吧。</p>
-<p>在不同操作系统、不同游览器里面默认显示的字体是不一样的，并且相同字体在不同操作系统里面渲染的效果也不尽相同，那么如何设置字体显示效果会比较好呢？</p>
-<blockquote>
-<p>推荐阅读 <a href="https://segmentfault.com/a/1190000006110417" target="_blank" rel="external">https://segmentfault.com/a/1190000006110417</a></p>
-</blockquote>
-<p>大咖案例：<br>例1（小米米官网）：font-family: “Arial”,”Microsoft YaHei”,”黑体”,”宋体”,sans-serif;</p>
-<p>例2（淘宝技术研发中心）：font: 12px/1.5 Tahoma,Helvetica,Arial,’宋体’,sans-serif;</p>
-<p>例3（加网 ）：font: 14px/1.5 ‘Microsoft YaHei’,arial,tahoma,\5b8b\4f53,sans-serif;</p>
-<p>例4（淘宝UED）：font: 12px/1 Tahoma,Helvetica,Arial,”\5b8b\4f53”,sans-serif;</p>
-<p>例5（一淘UX）: font-family: Helvetica, ‘Hiragino Sans GB’, ‘Microsoft Yahei’, ‘微软雅黑’, Arial, sans-serif;</p>
+                <p>APP对语言的支持实现</p>
+<p>1.首先在解决方案内添加语言的支持<br><img src="https://server-19860911.oss-cn-beijing.aliyuncs.com/hexoResource/1491379354257/images/pasted-0.png" alt="upload successful"></p>
+<p>2.新建一个 Localizable.strings 文件，选择需要的语言支持</p>
+<p><img src="https://server-19860911.oss-cn-beijing.aliyuncs.com/hexoResource/1491379437175/images/pasted-0.png" alt="upload successful"></p>
+<p><img src="https://server-19860911.oss-cn-beijing.aliyuncs.com/hexoResource/1491379492344/images/pasted-0.png" alt="upload successful"></p>
+<p><img src="https://server-19860911.oss-cn-beijing.aliyuncs.com/hexoResource/1491379523370/images/pasted-0.png" alt="upload successful"></p>
+<p>3.在Base 内输入一下代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">yearsAgo  = &quot;years ago&quot;;</div><div class="line">LastYear  = &quot;Last year&quot;;</div><div class="line">monthsAgo  = &quot;months ago&quot;;</div><div class="line">LastMonth  = &quot;Last month&quot;;</div><div class="line">weeksAgo  = &quot;weeks ago&quot;;</div><div class="line">LastWeek  = &quot;Last week&quot;;</div><div class="line">daysAgo  = &quot;days ago&quot;;</div><div class="line">Yesterday  = &quot;Yesterday&quot;;</div><div class="line">hoursAgo  = &quot;hours ago&quot;;</div><div class="line">AnHourAgo  = &quot;An hour ago&quot;;</div><div class="line">minutesAgo  = &quot;minutes ago&quot;;</div><div class="line">AMinuteAgo  = &quot;A minute ago&quot;;</div><div class="line">secondsAgo  = &quot;seconds ago&quot;;</div><div class="line">JustNow  = &quot;Just now&quot;;</div></pre></td></tr></table></figure></p>
+<p>4.在相应的位置处调用<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">NSLocalizedString(&quot;yearsAgo&quot;,comment:&quot;years ago&quot;)</div></pre></td></tr></table></figure></p>
 
 
                 <!-- size of one module in pixels, default 6 -->
                 <div class="text-center">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVYAAAFWCAAAAAAXxOpfAAAEMElEQVR42u3bwXHDMAwEQPXfdFKBNQeAsiRz8co4lmMu87gByONPXVAHAqxYsSqsWLEqrFixKqxYsSqsWLEqrFixKqxYsSqsWLEqrFixKqxYsSqsWLEqrFixKqxYsSqsWLEqrFixKqyvYj3iOn/202+Tv/Lp/cl3XrUWrFixYsWKdWfWq9+T0J8DnW/Y2rVgxYoVK1ase7Lm0ScJK0exPoWnBLe3FqxYsWLFihXrKtZqgyaJR1UarFixYsWKFes3Wc8HIWsDVjJ6wYoVK1asWLFePXSpjkDyYxbVIxc9MqxYsWLFihVrbzSSo9z78yvPt2LFihUrVqw3sc63IW9/VAcq1b914aqxYsWKFSvWH2XNA0qv+ZIT5EcxemMerFixYsWKFWuv4bI2is0PXFYD1m2tFqxYsWLFivXxrNXgcr4N1dg058hbMzfkVqxYsWLFivVVrNVmx3zxebsnR6xeJsGKFStWrFh3Zj0fliRfdD7USdo9OXcSH7FixYoVK1as1UDTG8/0lpSHpPmRUKxYsWLFinVn1mTx1SZL70pGErmqsW/VgRKsWLFixYp1B9beAKO6DfPtzIc3+adhxYoVK1ase7LmY49qrEnGOb1xS/6vMG+yYMWKFStWrDuwVlsSE/p8cJJEwFWtH6xYsWLFinVP1l6Tohd3ekutHsVYO27BihUrVqxYd2PtLSl/z6o20Kptw4oVK1asWHdmrR6SmJAlsSzZ4F5Eu+GmC1asWLFixfoS1jw8VWNWr8VTPYKZD3VumGVhxYoVK1asj2fNGy75wCNfcB6DEpR5nMKKFStWrFj3ZM3bFvnG5Ic25m2d5NOwYsWKFStWrNX40nu9etmjepGjFwSxYsWKFStWrNUAlD+VP9sLW/k377VysGLFihUr1t1YJ82L8/BUfba3zXkUu+FyJlasWLFixfoS1slBzGrLoxeDjkFhxYoVK1asWHPQK4YuvW1IYl9+vOMFVzKwYsWKFSvWB7D2Bi15eLpinFMNZFixYsWKFSvWKwYh1eOSSUTrNXHWNlywYsWKFSvW3ViTp5LwlEefavDqDYRuG7pgxYoVK1asj2fthZjqZ/YGKr2WyiNaLVixYsWKFeuDWXvbkIxnJk2QydWL3rAHK1asWLFi3ZO1F0omsSxp66zamJuvZGDFihUrVqwvYe0NZnKyfNvyjUxenzdZsGLFihUr1n1YJ02QajirHtmchEKsWLFixYoV63dY81eSAUkeBNeOWLBixYoVK1as+TAjCUDV15OGS7UBhBUrVqxYsWKdD12SLUnGJwvaH63BD1asWLFixYp11QAjb8rkxy5Xfc7ahgtWrFixYsX6q6wKK1asCitWrAorVqwKK1asCitWrAorVqwKK1asCitWrAorVqwKK1asCitWrAorVqwKK1asWBVWrFgVVqxYFdbH1z8+AkwLdYdUrAAAAABJRU5ErkJggg==">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASYAAAEmCAAAAADqr2IGAAAC+0lEQVR42u3bQXLDIAwF0Nz/0u0BPPZ8IeyY8LTKtE4CLwuQEJ8/EcQHASZMmDBhwiQwYcKECRMmTAITJkyYMGHCJDBhwoQJEyZMAhMmTJgwYcIkMGHChAkTJkwCEyZMmDBtxvSJ4/iu4+uzv4x919jYMGHChAkTpmRK189cMx0nmfxIs8aGCRMmTJgwXU/4bGFOUPLtQvJ8dWyYMGHChAnTLKbqQPNUGRMmTJgwYXobU/451XQXEyZMmDBher7Im5DlxdyxY9EFauGYMGHChOllTNVmmidfL9nfhAkTJkyYXsPUYe1sOOamspgwYcKECdNYkbeass5tNp27CcCECRMmTJiq5dr8qLJ6sfDs015x7RATJkyYMC3ONNamk0+7Cjf2c2LChAkTJkzJAn8f6PU2It9SYMKECRMmTFWspMCaXKi4Y2Mx67ATEyZMmDDtw1S9AtE58syJX13kxYQJEyZMSzHlEAlrp6HnGSBMmDBhwrQnU7XMmi/k1alWtxqYMGHChAnTrGR4bGLVVDkvEHfIMGHChAnTPkz9Im/nXQnlj9TCMWHChAnTV5k6E5iV4iaJ9NdSX0yYMGHCtCzTdXpZLfvmB59jR5tfbtzBhAkTJkwLMiWTqZZc8yV87IdJRoIJEyZMmDCNfVme0PaT535JGhMmTJgwYUqW2OqVjDvKuHNLvZgwYcKEaWemZGnPi7Z5YbezscCECRMmTJjGBtpZsKvTG0uMMWHChAkTprmRN6dWtx3JQSkmTJgwYcI0a9rVoSf/zbHuoMGECRMmTDszdQrBCUoOV21+xYQJEyZMmKoEnaJqfznvt7FiwoQJEyZMfaZqw02ytHdaYDFhwoQJE6Y7NgT99tZqE+qSqS8mTJgwYXoNU/5Mfi0wb9PJS8CYMGHChAlTlalzESJZvPNmoASlj4UJEyZMmPZh2jMwYcKECRMmTAITJkyYMGHCJDBhwoQJEyZMAhMmTJgwYcIkMGHChAkTJkwCEyZMmDBhwiQwYcKECdPi8Q/NEka6NjJzwgAAAABJRU5ErkJggg==">
                 </div>
 
                 
