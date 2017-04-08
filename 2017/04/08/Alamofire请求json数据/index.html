@@ -10,6 +10,10 @@
 
     <!--Description-->
     
+        <meta name="description" content="项目里用到人脸识别功能，就找了腾讯云的人脸识别，在调用接口时文档明确要求要json数据形式提交数据，我们在和第三方接口打交道经常会遇到这样的标准要求。项目swift写的，请求框架用的是Alamofire在使用时没注意，遇到了点问题，注意下面的这段话
+
+The JSONEncoding type cr">
+    
 
     <!--Author-->
     
@@ -18,7 +22,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="Roy&#39;s Blog"/>
+        <meta property="og:title" content="Alamofire请求json数据"/>
     
 
     <!--Open Graph Description-->
@@ -29,7 +33,7 @@
 
     <!--Type page-->
     
-        <meta property="og:type" content="website" />
+        <meta property="og:type" content="article" />
     
 
     <!--Page Cover-->
@@ -40,7 +44,7 @@
 
     <!-- Title -->
     
-    <title>page - Archiv: 2017 - Roy&#39;s Blog</title>
+    <title>Alamofire请求json数据 - Roy&#39;s Blog</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
@@ -152,110 +156,79 @@
 </nav>
 
     <!-- Main Content -->
-    
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
 
-<!-- Page Header -->
-<!-- Set your background image for this header in the theme's configuration: index_cover -->
 <header class="intro-header" style="background-image: url('https://server-19860911.oss-cn-beijing.aliyuncs.com/hexoResource/1490575299745/images/pasted-0.png')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading">
-                    <h1>2017</h1>
+                <div class="post-heading">
+                    <h1>Alamofire请求json数据</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                            Posted by Roy on
+                        
+                        2017-04-08
+                    </span>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
-<!-- Main Content -->
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+
+            <!-- Gallery -->
             
-                <div class="post-preview">
-    <a href="/2017/03/26/梦的解析/">
-        <h1 class="post-title archive">
-            梦的解析
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-            Posted by Roy on
-        
-        2017-03-26
-    </p>
-</div>
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              <small class="copyright text-muted navbar-right">
+                 185字预计1分
+              </small>
+
+                <p>项目里用到人脸识别功能，就找了腾讯云的人脸识别，在调用接口时文档明确要求要json数据形式提交数据，我们在和第三方接口打交道经常会遇到这样的标准要求。<br>项目swift写的，请求框架用的是Alamofire在使用时没注意，遇到了点问题，注意下面的这段话</p>
+<blockquote>
+<p>The JSONEncoding type creates a JSON representation of the parameters object, which is set as the HTTP body of the request. The Content-Type HTTP header field of an encoded request is set to application/json.</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Alamofire.request(&quot;https://httpbin.org/get&quot;, parameters: parameters, encoding: URLEncoding.default)</div></pre></td></tr></table></figure>
+<p>在定义了Content-Type:”application/json”的httpheader头信息后，需要显式声明 encoding: URLEncoding.default 才会正确的采用json格式发送。</p>
+
+
+                <!-- size of one module in pixels, default 6 -->
+                <div class="text-center">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAAE+CAAAAAAxUyPsAAADmklEQVR42u3bQZLbMAwEQP//08kLzBoAlER5G6eUInup5mUEwp9/alAfBPjw4cOn8OHDh0/hw4cPn8KHDx8+hQ8fPnz4FD58+PApfPjw4VP48OHDp/Dhw4cPn8KHDx8+hQ8fPnxqK98nrm+fSq7k939b4XzN+PDhw4cP3zl8k3vWy12TJdt5xZrx4cOHDx++E/jWISMJHPn/5sHl2/fka8aHDx8+fPh+g68aVpI2xHxL8OHDhw8fvl/ly1vn65ZBteGODx8+fPjw/QZflbj3ej8/BnjxWQc+fPjw4cNXHPY659+vnO/Dhw8fPnx/nm9XiyGJKdWIM4FoPh0+fPjw4cP3aLO+N6I9OQjvjY/vgsaHDx8+fPjuDC5JWzxfaL4B1TuvCzr48OHDhw/fs8ElCSjVyFK9M0GsHuTjw4cPHz585/AlQaEaTeZRqboGfPjw4cOH73y+aht9stwqRK/w4cOHDx++t/Al13vhpkqTh5h54cOHDx8+fPfzzVsJ81f9HvqcFR8+fPjw4buabx1W8uBSHUGbb0MesPDhw4cPH77T+KpA1XhRbVL0jsMfaNbjw4cPHz58l1U1duQH8L1G/N7Igg8fPnz48N3frM8Pp/NX/d5nk807Irjgw4cPHz58W6NJglgNH/kYd+/O6sbgw4cPHz58T/ElTL3B7vzBJuNo82FxfPjw4cOH71m+BDcPEPlIWX7EvgsOHz58+PDhu5Mvaannh+LVo/RkHK03PIcPHz58+PCdxlcNB3ms6bXsq0NsuyILPnz48OHDd/87b3Xwq/oCnzTZP3FV2xn48OHDhw/fCXyTV+5koG3+wNWo9EDuw4cPHz58+AYtg12BY/6dV2wYPnz48OHDdxpf/tOsvN2Qf3ZNXB0rx4cPHz58+E7mu6L5nl9JWhjVwocPHz58+E7jmzT3q2FiElOq3DcFF3z48OHDh28TR94WzwPH5OGvODDAhw8fPnz43nhMnh9arxsHkxG3XT/WwocPHz58+O5v1ufH3r3Gff7Xq6FqPiaODx8+fPjwncmXRJBeTKm2FXo/5cKHDx8+fPjexTd57CprHoCOmO/Dhw8fPnz4tjbr10BJu7x3GJ/f81hwwYcPHz58+GK+akO8dyVHr8aj5Bvw4cOHDx++E/gUPnz48OFT+PDhw6fw4cOHT+HDhw+fwocPHz6FDx8+fPgUPnz48Cl8+PDhU/jw4cOn8OHDhw+fwocPHz4V1394x+03lA+oFAAAAABJRU5ErkJggg==">
+                </div>
+
+                
+            </div>
+
+            <!-- Comments -->
             
-                <div class="post-preview">
-    <a href="/2017/03/26/hello-world/">
-        <h1 class="post-title archive">
-            Hexo!  Hello World
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-            Posted by roy on
-        
-        2017-03-26
-    </p>
-</div>
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+    <hr />
+    <h3>Kommentare:</h3>
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+
+
+                </div>
             
-                <div class="post-preview">
-    <a href="/2017/03/26/gulp/">
-        <h1 class="post-title archive">
-            gulp前端构建工具讲义
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-            Posted by Roy on
-        
-        2017-03-26
-    </p>
-</div>
-            
-                <div class="post-preview">
-    <a href="/2017/03/26/hexo-image-用阿里云存储/">
-        <h1 class="post-title archive">
-            hexo image 用阿里云存储
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-            Posted by Roy on
-        
-        2017-03-26
-    </p>
-</div>
-            
-                <div class="post-preview">
-    <a href="/2017/03/25/为什么开这个blog/">
-        <h1 class="post-title archive">
-            为什么开这个blog
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-        2017-03-25
-    </p>
-</div>
-            
-            <div class="archive-before-pagination"></div>
-            <ul class="pager">
-    
-        <li class="previous"><a href="/archives/2017/">&larr;  Nächste Seite</a></li>
-    
-    
-</ul>
         </div>
     </div>
-</div>
+</article>
 
 
 
@@ -345,7 +318,7 @@
         var dsq = document.createElement('script');
         dsq.type = 'text/javascript';
         dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     }());
 </script>
