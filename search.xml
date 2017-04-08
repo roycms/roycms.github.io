@@ -10,7 +10,7 @@
 <blockquote>
 <p>The JSONEncoding type creates a JSON representation of the parameters object, which is set as the HTTP body of the request. The Content-Type HTTP header field of an encoded request is set to application/json.</p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Alamofire.request(&quot;https://httpbin.org/get&quot;, parameters: parameters, encoding: URLEncoding.default)</div></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="type">Alamofire</span>.request(<span class="string">"https://httpbin.org/get"</span>, parameters: parameters, encoding: <span class="type">URLEncoding</span>.<span class="keyword">default</span>)</div></pre></td></tr></table></figure>
 <p>在定义了Content-Type:”application/json”的httpheader头信息后，需要显式声明 encoding: URLEncoding.default 才会正确的采用json格式发送。</p>
 ]]></content>
       
