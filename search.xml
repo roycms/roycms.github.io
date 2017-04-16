@@ -14,7 +14,7 @@
     </entry>
     
     <entry>
-      <title><![CDATA[Alamofire请求json数据]]></title>
+      <title><![CDATA[Alamofire发送json数据]]></title>
       <url>https://www.19860911.cn/2017/04/08/Alamofire%E8%AF%B7%E6%B1%82json%E6%95%B0%E6%8D%AE/</url>
       <content type="html"><![CDATA[<p>项目里用到人脸识别功能，就找了腾讯云的人脸识别，在调用接口时文档明确要求要json数据形式提交数据，我们在和第三方接口打交道经常会遇到这样的标准要求。<br>项目swift写的，请求框架用的是Alamofire在使用时没注意，遇到了点问题，注意下面的这段话</p>
 <blockquote>
