@@ -10,6 +10,8 @@
 
     <!--Description-->
     
+        <meta name="description" content="人脸识的核心技术大部分掌握在BAT手中，腾讯的万象优图，阿里注资的face++，百度人脸识别，都提供了活体检测，人脸核身，人脸检索等开放接口，大部分都以图片资源或者url地址作为输入对象，在调用这些接口前怎样优化整个流程减少数据的交互的前提下满足我们的业务需求呢，翻阅文档发现IOS和Android的">
+    
 
     <!--Author-->
     
@@ -18,7 +20,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="Roy&#39;s Blog"/>
+        <meta property="og:title" content="ios人脸识别 CIDetector"/>
     
 
     <!--Open Graph Description-->
@@ -29,7 +31,7 @@
 
     <!--Type page-->
     
-        <meta property="og:type" content="website" />
+        <meta property="og:type" content="article" />
     
 
     <!--Page Cover-->
@@ -40,7 +42,7 @@
 
     <!-- Title -->
     
-    <title>page - Archives: 2017 - Roy&#39;s Blog</title>
+    <title>ios人脸识别 CIDetector - Roy&#39;s Blog</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
@@ -152,125 +154,75 @@
 </nav>
 
     <!-- Main Content -->
-    
+    <!-- Page Header -->
+<!-- Set your background image for this header in your post front-matter: cover -->
 
-<!-- Page Header -->
-<!-- Set your background image for this header in the theme's configuration: index_cover -->
 <header class="intro-header" style="background-image: url('https://server-19860911.oss-cn-beijing.aliyuncs.com/hexoResource/1490575299745/images/pasted-0.png')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading">
-                    <h1>2017</h1>
+                <div class="post-heading">
+                    <h1>ios人脸识别 CIDetector</h1>
+                    
+                    <span class="meta">
+                        <!-- Date and Author -->
+                        
+                            Posted by Roy on
+                        
+                        2017-04-16
+                    </span>
                 </div>
             </div>
         </div>
     </div>
 </header>
 
-<!-- Main Content -->
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Tags and categories -->
+           
+
+            <!-- Gallery -->
             
-                <div class="post-preview">
-    <a href="/2017/03/27/奥森公园/">
-        <h1 class="post-title archive">
-            奥森公园
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-            Posted by Roy on
-        
-        2017-03-27
-    </p>
-</div>
+
+            <!-- Post Main Content -->
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              <small class="copyright text-muted navbar-right">
+                 190字预计1分
+              </small>
+
+                <p>人脸识的核心技术大部分掌握在BAT手中，腾讯的万象优图，阿里注资的face++，百度人脸识别，都提供了活体检测，人脸核身，人脸检索等开放接口，大部分都以图片资源或者url地址作为输入对象，在调用这些接口前怎样优化整个流程减少数据的交互的前提下满足我们的业务需求呢，翻阅文档发现IOS和Android的图像处理的库都包含了一个基础的人脸识别的类，用于识别图片中的人脸，CIDetector类是一个图像识别的类来自CoreImage。</p>
+<p>代码示例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">// detector init</div><div class="line">let detector = CIDetector(ofType: CIDetectorTypeFace,</div><div class="line">                                      context: nil,</div><div class="line">                                      options: [CIDetectorAccuracy:CIDetectorAccuracyHigh,</div><div class="line">                                                CIDetectorMinFeatureSize:&quot;0.01&quot;,</div><div class="line">                                                CIDetectorNumberOfAngles:&quot;11&quot;,</div><div class="line">                                                CIDetectorEyeBlink:true</div><div class="line">            </div><div class="line">            ])</div></pre></td></tr></table></figure>
+
+                <!-- size of one module in pixels, default 6 -->
+                <div class="text-center">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASYAAAEmCAAAAADqr2IGAAADCklEQVR42u3bO3LDMAwFQN3/0kmbxpoHgLbMcFFlEkWfVQEChK4fEcSFABMmTJgwYRKYMGHChAkTJoEJEyZMmDBhEpgwYcKECRMmgQkTJkyYMGESmDBhwoQJEyaBCRMmTJgOY7ri+Ht8crbkKq/+2rs3TJgwYcKE6dWD5cfcP0zyv6+uW30l+TGYMGHChAlTkpjzxF9dOuTEPUpMmDBhwoQpv5WcbMKHCRMmTJgwPbsg6DVnc3RMmDBhwoTpqSbv/e+rRWxeSG/WC8eECRMmTF/G1Bvc+czP2883YcKECROmR5kmrKtK1skDN58CEyZMmDAdw5QXpb3h0fvkXf3wYxUuJkyYMGE6jal3yeoQT46VvzZMmDBhwoRpXuJW039+nuroT2/LExMmTJgwYcrHaPLiMx/iqbaDH+uFY8KECROmf8E0T9XVzznye8CECRMmTJgmJW6ezu9vNy9Wex9vzBcHmDBhwoQJU68QXbWAeB8QJkyYMGE6jSkvMqsDrJOxm3dsYWLChAkTpjOZJqVsTpmUvr3PQjBhwoQJE6YqUzXNJ+fJ7+QzrV5MmDBhwnQOU57483GchCnf1KxeFxMmTJgwYcqbvPng6WSbM0nwDw/uYMKECROmbZl624o5UC+1zz/zwIQJEyZMmJLknTdeq83f+dUxYcKECROmSRmc3PSksZsUwL2NVUyYMGHChCmhydN/rxGcN3bXbmRiwoQJE6bTmFa1bqvlcb4IyItqTJgwYcKEaVVhXG3m3pesk1fy0XUTJkyYMGHakOmKo5rgJ43dhO+xEVVMmDBhwrQh06Q8rkIkr6p3DCZMmDBhwpQQ5EXs/RJhUjx/3eAOJkyYMGE6hqnK1yu/k+J5UgBjwoQJEyZM+aBqb9GQLyySYhsTJkyYMGFa1eTNlwW9NF8dRX1gQYAJEyZMmDZkWtVgrS4Xqted0GDChAkTpjOZzgxMmDBhwoQJk8CECRMmTJgwCUyYMGHChAmTwIQJEyZMmDAJTJgwYcKECZPAhAkTJkyYMAlMmDBhwrR5/AJNs/UZGJCilwAAAABJRU5ErkJggg==">
+                </div>
+
+                
+            </div>
+
+            <!-- Comments -->
             
-                <div class="post-preview">
-    <a href="/2017/03/26/梦的解析/">
-        <h1 class="post-title archive">
-            梦的解析
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-            Posted by Roy on
-        
-        2017-03-26
-    </p>
-</div>
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    
+    <hr />
+    <h3>Comments:</h3>
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+
+
+                </div>
             
-                <div class="post-preview">
-    <a href="/2017/03/26/hello-world/">
-        <h1 class="post-title archive">
-            Hexo!  Hello World
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-            Posted by roy on
-        
-        2017-03-26
-    </p>
-</div>
-            
-                <div class="post-preview">
-    <a href="/2017/03/26/gulp/">
-        <h1 class="post-title archive">
-            gulp前端构建工具讲义
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-            Posted by Roy on
-        
-        2017-03-26
-    </p>
-</div>
-            
-                <div class="post-preview">
-    <a href="/2017/03/26/hexo-image-用阿里云存储/">
-        <h1 class="post-title archive">
-            hexo image 用阿里云存储
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-            Posted by Roy on
-        
-        2017-03-26
-    </p>
-</div>
-            
-                <div class="post-preview">
-    <a href="/2017/03/25/为什么开这个blog/">
-        <h1 class="post-title archive">
-            为什么开这个blog
-        </h1>
-    </a>
-    <p class="post-meta archive">
-        <!-- Date and Author -->
-        
-        2017-03-25
-    </p>
-</div>
-            
-            <div class="archive-before-pagination"></div>
-            <ul class="pager">
-    
-        <li class="previous"><a href="/archives/2017/">&larr;  Newer Posts</a></li>
-    
-    
-</ul>
         </div>
     </div>
-</div>
+</article>
 
 
 
@@ -360,7 +312,7 @@
         var dsq = document.createElement('script');
         dsq.type = 'text/javascript';
         dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     }());
 </script>

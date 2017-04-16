@@ -4,6 +4,16 @@
   
     
     <entry>
+      <title><![CDATA[ios人脸识别 CIDetector]]></title>
+      <url>https://www.19860911.cn/2017/04/16/ios%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB/</url>
+      <content type="html"><![CDATA[<p>人脸识的核心技术大部分掌握在BAT手中，腾讯的万象优图，阿里注资的face++，百度人脸识别，都提供了活体检测，人脸核身，人脸检索等开放接口，大部分都以图片资源或者url地址作为输入对象，在调用这些接口前怎样优化整个流程减少数据的交互的前提下满足我们的业务需求呢，翻阅文档发现IOS和Android的图像处理的库都包含了一个基础的人脸识别的类，用于识别图片中的人脸，CIDetector类是一个图像识别的类来自CoreImage。</p>
+<p>代码示例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">// detector init</div><div class="line">let detector = CIDetector(ofType: CIDetectorTypeFace,</div><div class="line">                                      context: nil,</div><div class="line">                                      options: [CIDetectorAccuracy:CIDetectorAccuracyHigh,</div><div class="line">                                                CIDetectorMinFeatureSize:&quot;0.01&quot;,</div><div class="line">                                                CIDetectorNumberOfAngles:&quot;11&quot;,</div><div class="line">                                                CIDetectorEyeBlink:true</div><div class="line">            </div><div class="line">            ])</div></pre></td></tr></table></figure>]]></content>
+      
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[Alamofire请求json数据]]></title>
       <url>https://www.19860911.cn/2017/04/08/Alamofire%E8%AF%B7%E6%B1%82json%E6%95%B0%E6%8D%AE/</url>
       <content type="html"><![CDATA[<p>项目里用到人脸识别功能，就找了腾讯云的人脸识别，在调用接口时文档明确要求要json数据形式提交数据，我们在和第三方接口打交道经常会遇到这样的标准要求。<br>项目swift写的，请求框架用的是Alamofire在使用时没注意，遇到了点问题，注意下面的这段话</p>
