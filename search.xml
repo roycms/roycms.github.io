@@ -4,6 +4,18 @@
   
     
     <entry>
+      <title><![CDATA[智能语音写作-来自科幻电影的启发]]></title>
+      <url>https://www.19860911.cn/2017/04/16/%E6%99%BA%E8%83%BD%E8%AF%AD%E9%9F%B3%E5%86%99%E4%BD%9C-%E6%9D%A5%E8%87%AA%E7%A7%91%E5%B9%BB%E7%94%B5%E5%BD%B1%E7%9A%84%E5%90%AF%E5%8F%91/</url>
+      <content type="html"><![CDATA[<p>今天看《太空旅客》女主是一个作家，打开超科幻的pad设备，像讲故事一样对着pad开始了写作，随着屏幕上一段一段的文字出现感觉这样的技术离我们并不遥远，就饶有兴趣的google了一下智能语音写作，还真出现了不少先驱者，其中知乎的一篇文章最地道，绕开技术本身，实实在在的讲了应该如何开启语音协作，这里分享给大家连接 </p>
+<blockquote>
+<p><a href="https://www.zhihu.com/question/21986964" target="_blank" rel="external">https://www.zhihu.com/question/21986964</a></p>
+</blockquote>
+]]></content>
+      
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[ios人脸识别 CIDetector]]></title>
       <url>https://www.19860911.cn/2017/04/16/ios%E4%BA%BA%E8%84%B8%E8%AF%86%E5%88%AB/</url>
       <content type="html"><![CDATA[<p>人脸识的核心技术大部分掌握在BAT手中，腾讯的万象优图，阿里注资的face++，百度人脸识别，都提供了活体检测，人脸核身，人脸检索等开放接口，大部分都以图片资源或者url地址作为输入对象，在调用这些接口前怎样优化整个流程减少数据的交互的前提下满足我们的业务需求呢，翻阅文档发现IOS和Android的图像处理的库都包含了一个基础的人脸识别的类，用于识别图片中的人脸，CIDetector类是一个图像识别的类来自CoreImage。</p>
